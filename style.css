@@ -148,4 +148,18 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .project {
+    background-color: #1e1e1e;
+    color: white;
+}
 

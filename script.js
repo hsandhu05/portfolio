@@ -20,4 +20,14 @@ projects.forEach(project => {
         project.style.transform = 'scale(1)';
     });
 });
+// Dark mode toggle
+const toggleButton = document.createElement('button');
+toggleButton.textContent = 'Dark Mode';
+document.body.prepend(toggleButton);
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Add dark mode styles in CSS
 
