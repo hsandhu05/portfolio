@@ -8,3 +8,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Adding a hover effect to project cards (example: showing more details on hover)
+const projects = document.querySelectorAll('.project');
+
+projects.forEach(project => {
+    project.addEventListener('mouseenter', () => {
+        project.style.transform = 'scale(1.05)';
+        project.style.transition = 'transform 0.3s ease';
+    });
+    project.addEventListener('mouseleave', () => {
+        project.style.transform = 'scale(1)';
+    });
+});
+
