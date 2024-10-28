@@ -80,22 +80,30 @@ nav ul li a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .project img {
     max-width: 100%;
+    aspect-ratio: 16 / 9; /* Maintain a consistent aspect ratio */
     border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .project h3 {
     font-size: 1.5rem;
     margin: 15px 0;
+    color: #333;
 }
 
 .project p {
@@ -148,6 +156,7 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
 /* Dark mode styles */
 body.dark-mode {
     background-color: #121212;
@@ -194,9 +203,21 @@ ul {
     padding-left: 20px; /* Adjust this value to move bullets to the right */
 }
 
+ul li {
+    position: relative; /* For custom bullet points */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+ul li::before {
+    content: "✔️"; /* Use a check mark for list items */
+    position: absolute;
+    left: -20px; /* Adjust position */
+    color: #ff6600; /* Color for bullet */
+}
+
 h4 {
     margin-top: 10px; /* Space above subsection titles */
-    color: #666; /* Lighter color for subheadings */
+    color: #040404; /* Lighter color for subheadings */
 }
 
 strong {
