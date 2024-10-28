@@ -190,13 +190,23 @@ body.dark-mode .project {
 
 .project-details {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between objectives and key components */
+    flex-direction: column; /* Stack objectives and key components vertically */
+    margin-top: 20px; /* Add space above key components */
 }
 
 .project-objectives,
 .project-key-components {
-    width: 48%; /* Adjust width for symmetry */
+    width: 100%; /* Full width to avoid misalignment */
+    margin-bottom: 20px; /* Space between objectives and key components */
 }
+
+/* Optional: Adjust heading styles for better visibility */
+.project-objectives h4,
+.project-key-components h4 {
+    margin-top: 10px; /* Space above subsection titles */
+    color: #333; /* Darker color for subheadings */
+}
+
 
 ul {
     margin-left: 20px; /* Keeps the left margin for the list */
