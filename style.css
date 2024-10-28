@@ -163,3 +163,42 @@ body.dark-mode .project {
     color: white;
 }
 
+.section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.project {
+    border: 1px solid #ccc; /* Add border for definition */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.project h3 {
+    color: #333; /* Darker color for project title */
+}
+
+.project-details {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between objectives and key components */
+}
+
+.project-objectives,
+.project-key-components {
+    width: 48%; /* Adjust width for symmetry */
+}
+
+ul {
+    margin-left: 20px; /* Keeps the left margin for the list */
+    padding-left: 20px; /* Adjust this value to move bullets to the right */
+}
+
+h4 {
+    margin-top: 10px; /* Space above subsection titles */
+    color: #666; /* Lighter color for subheadings */
+}
+
+strong {
+    color: #000; /* Strong text color */
+}
