@@ -208,12 +208,6 @@ ul li {
     margin-bottom: 10px; /* Space between list items */
 }
 
-ul li::before {
-    content: "✔️"; /* Use a check mark for list items */
-    position: absolute;
-    left: -20px; /* Adjust position */
-    color: #ff6600; /* Color for bullet */
-}
 
 h4 {
     margin-top: 10px; /* Space above subsection titles */
