@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e293b; /* Dark blue */
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .header .nav a:hover {
+            color: #38bdf8; /* Light blue */
+        }
+
+        /* Content styles */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e293b;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+
+    <header class="header">
+        <div class="logo">Your Name</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Welcome to My Portfolio!</h1>
+        <p>This is the home page. Use the navigation above to explore.</p>
     </div>
-  </header>
 
-  <!-- Main Content Section -->
-  <main>
-    <h2>Welcome to My Portfolio!</h2>
-    <p>This is the home page. Use the navigation above to explore.</p>
-  </main>
+    <footer>
+        &copy; 2024 Your Name. All rights reserved.
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-  </footer>
 </body>
 </html>
