@@ -90,4 +90,17 @@ main {
   background-color: #38bdf8;
   color: white;
 }
+.dark-mode-btn {
+  padding: 8px 15px;
+  margin-left: 20px;
+  border: none;
+  background-color: #38bdf8;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.dark-mode-btn:hover {
+  background-color: #1e90ff;
+}
 
