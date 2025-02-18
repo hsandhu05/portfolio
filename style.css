@@ -68,3 +68,26 @@ main {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Dark Mode */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #222;
+}
+
+.dark-mode footer {
+  background-color: #222;
+}
+
+.dark-mode a {
+  color: #38bdf8;
+}
+
+.dark-mode button {
+  background-color: #38bdf8;
+  color: white;
+}
+
