@@ -87,3 +87,52 @@ footer {
   width: 100%;
   bottom: 0;
 }
+/* Blog List */
+.blog-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.blog-list li {
+  margin: 10px 0;
+}
+
+.blog-list a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.blog-list a:hover {
+  color: #38bdf8;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #38bdf8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1e90ff;
+}
