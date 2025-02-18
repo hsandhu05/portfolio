@@ -64,7 +64,7 @@ footer {
 
 /* Main Content */
 main {
-  padding: 100px 20px 50px; /* Adjust for header and footer */
+  padding: 120px 20px 80px; /* Adjust for header and footer */
   max-width: 1200px;
   margin: 0 auto;
 }
